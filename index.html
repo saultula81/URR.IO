@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reproductor de Audio</title>
+<style>
+  body {
+    background-image: url('o2.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  #audioPlayer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  audio {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+  }
+
+  /* Estilos específicos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-size: contain;
+    }
+    #audioPlayer {
+      padding: 10px;
+    }
+    audio {
+      max-width: 300px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="audioPlayer">
+  <h2>Ungidos del Rey de Reyes</h2>
+  <audio autoplay controls>
+    <source src="https://stream.zeno.fm/7nnbnqmqnf8vv" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+
+</body>
+</html>
+
